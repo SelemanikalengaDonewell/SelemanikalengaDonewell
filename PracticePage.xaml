@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnvironmentApp3.PracticePage"
+             Title="Practice Page">
+    <VerticalStackLayout>
+        <Label Text="Set your time"
+                FontSize="22"
+                FontAttributes="Bold"
+               HorizontalOptions="Center"
+               />
+        <Grid ColumnSpacing="5">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label 
+                Grid.Row="0"
+                Grid.Column="0"
+                 HorizontalOptions="Center"
+                Text="Start" 
+                 FontSize="20"
+                FontAttributes="Bold"/>
+            <Label 
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                Text="End"
+                FontSize="20"
+                FontAttributes="Bold"
+                />
+            <Grid Grid.Row="1" Grid.Column="0" ColumnSpacing="5">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Frame Grid.Column="0" HeightRequest="45">
+                    <Entry HeightRequest="65"
+                           Placeholder="Day"
+                           TextColor="Black"
+                           FontSize="18"
+                           >
+
+                    </Entry>
+                </Frame>
+                <Frame  Grid.Column="1" HeightRequest="45" >
+                    <Entry
+                        HeightRequest="65"
+                           Placeholder="Time"
+                           TextColor="Black"
+                           FontSize="18"
+                        >
+
+                    </Entry>
+                </Frame>
+
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="1" ColumnSpacing="5">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Frame Grid.Column="0" HeightRequest="45">
+                    <Entry HeightRequest="65"
+                           Placeholder="Day"
+                           TextColor="Black"
+                           FontSize="18"
+                           >
+
+                    </Entry>
+                </Frame>
+                <Frame  Grid.Column="1" HeightRequest="45" >
+                    <Entry
+                        HeightRequest="65"
+                           Placeholder="Time"
+                           TextColor="Black"
+                           FontSize="18"
+                        >
+
+                    </Entry>
+                </Frame>
+
+            </Grid>
+        </Grid>
+        <Label 
+            x:Name="SurveyLabel"
+            Padding="0,70,0,0"
+            HorizontalOptions="Center"
+            Text="How was the practice ?"
+            FontAttributes="Bold"
+            TextColor="Blue"
+            FontSize="20"
+            >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers>
+                
+            </Label>
+
+    </VerticalStackLayout>
+</ContentPage>

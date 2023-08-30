@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnvironmentApp3.PhysicalPagexaml"
+             Title="Physical Environment">
+    <StackLayout>
+        
+        <Grid RowSpacing="10" Padding="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0"  CornerRadius="20" BorderColor="DarkBlue" >
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  />
+                </Frame.GestureRecognizers>
+                <Grid HeightRequest="80">
+                    <Label Text="What is Physical Environment ?"
+                           FontSize="25"
+                           FontAttributes="Bold"/>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="1" CornerRadius="20" BorderColor="DarkBlue" >
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                </Frame.GestureRecognizers>
+                <Grid HeightRequest="85">
+                    <Label Text="What is a Healthy Home Environment"
+                            FontSize="25"
+                           FontAttributes="Bold"/>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="2" CornerRadius="20" BorderColor="DarkBlue"  >
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                </Frame.GestureRecognizers>
+                <Grid HeightRequest="80">
+                    <Label Text="What is an Age-friendly Environment?"
+                            FontSize="25"
+                           FontAttributes="Bold"/>
+                </Grid>
+            </Frame>
+        </Grid>
+    </StackLayout>
+</ContentPage>

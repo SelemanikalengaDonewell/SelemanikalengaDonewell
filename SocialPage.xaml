@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnvironmentApp3.SocialPage"
+             Title="Social Environment">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="10">
+            <Frame>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                        Text="Defintion"
+                        HorizontalOptions="Center"
+                           TextColor="Blue"
+                           FontSize="30"
+                           FontAttributes="Bold"/>
+                    <Label Grid.Row="1"
+                         Text="The social environment refers to the immediate physical and social setting in which people live or in which something happens or develops. It includes the culture that the individual was educated or lives in, and the people and institutions with whom they interact."
+                         FontSize="Subtitle"
+                        />
+                </Grid>
+            </Frame>
+            <Frame>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="130"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                        Text="Advantages"
+                        HorizontalOptions="Center"
+                           TextColor="Blue"
+                           FontSize="30"
+                           FontAttributes="Bold"/>
+                    <Label Grid.Row="1"
+                        Text="A well-designed social environment helps foster positive peer relationships, creates positive interactions between adults and children, and provides opportunities for adults to support children to achieve their social goals."
+                        FontSize="Subtitle"
+                        />
+
+                </Grid>
+            </Frame>
+            <Frame>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="130"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                        Text="Disadvantages"
+                        HorizontalOptions="Center"
+                           TextColor="Blue"
+                           FontSize="30"
+                           FontAttributes="Bold"/>
+                    <Label Grid.Row="1"
+                       Text="An individual's social environment can negatively affect a person's health leading to obesity, mental health problems, and a higher risk of diseases. Typically, those that are lower on the social ladder are twice as likely to develop a health condition"
+                        FontSize="Subtitle"
+                        />
+
+                </Grid>
+            </Frame>
+            <Button  Margin="15"
+                     BackgroundColor="BlueViolet"
+                     CornerRadius="20"
+                     WidthRequest="140"
+                    HorizontalOptions="End"
+                     Text="Start Practice"
+                     FontSize="15"
+                     FontAttributes="Bold"
+                    
+                    />
+        </VerticalStackLayout>
+        
+    </ScrollView>
+</ContentPage>

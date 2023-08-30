@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnvironmentApp3.ComunityPage"
+             Title="Comunity Environment">
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="10">
+            <Frame>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                           Text="Defintion"
+                             HorizontalOptions="Center"
+                           TextColor="Blue"
+                           FontSize="30"
+                           FontAttributes="Bold"/>
+                    <Label Grid.Row="1"
+                        
+                        Text="Community Environmental is a method for improving the sustainable and equitable governance of natural resources at the local level."
+                        FontSize="Subtitle"/>
+                </Grid>
+            </Frame>
+            <Frame>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="315"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                           Text="Advantages"
+                             HorizontalOptions="Center"
+                           TextColor="Blue"
+                           FontSize="30"
+                           FontAttributes="Bold"/>
+                    <Label Grid.Row="1"
+                        Text="Within a community, the social interactions you have can highly impact your mental and physical health. Research shows that many mental and physical health conditions, including anxiety, depression, ADHD, substance abuse, aggressive behavior, asthma, heart disease, and obesity, relate to your particular environment. In order to sustain your health, it is important to have a strong community that you are able to turn to and be supported by.
+                           Cleaner Environment in which you live also plays an important role in your overall health."
+                       FontSize="Subtitle" 
+
+                           />
+                </Grid>
+            </Frame>
+            <Frame>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="130"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0"
+                           Text="Disadvantages"
+                             HorizontalOptions="Center"
+                           TextColor="Blue"
+                           FontSize="30"
+                           FontAttributes="Bold"/>
+                    <Label Grid.Row="1"
+                        Text="If community development is not sustainable, people will easily have conflict, and the life will chaotic. A rising population will also make use of the bare essentials of life such as food, water, and shelter."
+                       FontSize="Subtitle"
+                           />
+                </Grid>
+            </Frame>
+            <Button
+                Margin="15"
+                     BackgroundColor="BlueViolet"
+                     CornerRadius="20"
+                     WidthRequest="140"
+                    HorizontalOptions="End"
+                     Text="Start Practice"
+                     FontSize="15"
+                     FontAttributes="Bold"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

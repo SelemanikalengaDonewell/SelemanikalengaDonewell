@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Environment Care"
+             BackgroundColor="#ffffff"
+             
+             x:Class="EnvironmentApp3.MainPage">
+    
+    <ScrollView>
+
+        
+        <StackLayout  Padding="0" Spacing="5">
+
+            <Grid>
+
+                <Border
+                            Grid.RowSpan="3"
+                            BackgroundColor="#311B45"
+                            
+                            Stroke="#6E557C"
+                            StrokeShape="RoundRectangle 30,30,30,30"
+                            StrokeThickness="2"
+                            HeightRequest="250"
+                           
+                            >
+                    <Grid>
+                        <Image Aspect="AspectFill"  Source="fiz.png"/>
+                        <RoundRectangle
+                            Grid.RowSpan="3"
+                            CornerRadius="30"
+                            HeightRequest="250"
+                           
+                            Opacity=".7"
+                            >
+                            <RoundRectangle.Fill >
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop 
+                                        Offset="0"
+                                        Color="Transparent"
+                                        ></GradientStop>
+                                    <GradientStop 
+                                        Offset="1"
+                                        Color="Black"
+                                        />
+                                </LinearGradientBrush>
+                            </RoundRectangle.Fill>
+                        </RoundRectangle>
+                    </Grid>
+                    <Border.Shadow>
+                        <Shadow
+                                    Brush="#C283fd"
+                                    Opacity=".7"
+                                    Radius="100"
+                                    Offset="0,0"
+                                    />
+                    </Border.Shadow>
+                </Border>
+
+                <Label     
+                            x:Name="Physical"
+                            Padding="0,0,0,20"
+                            Text="Physical Environment"
+                            FontSize="28"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            TextColor="White"
+                            FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+
+            <Grid>
+
+            <Border
+                            Grid.RowSpan="3"
+                            BackgroundColor="#311B45"
+                            Stroke="#6E557C"
+                            StrokeShape="RoundRectangle 30,30,30,30"
+                            StrokeThickness="2"
+                            HeightRequest="250"
+                           
+                            >
+                    <Grid>
+                <Image Aspect="AspectFill"  Source="sosho.png"
+                           
+                            />
+                        <RoundRectangle
+                            Grid.RowSpan="3"
+                            CornerRadius="30"
+                            HeightRequest="250"
+                           
+                            Opacity=".7"
+                            >
+                            <RoundRectangle.Fill >
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop 
+                                        Offset="0"
+                                        Color="Transparent"
+                                        ></GradientStop>
+                                    <GradientStop 
+                                        Offset="1"
+                                        Color="Black"
+                                        />
+
+
+
+                                </LinearGradientBrush>
+                            </RoundRectangle.Fill>
+
+                        </RoundRectangle>
+                    </Grid>
+                    <Border.Shadow>
+                    <Shadow
+                                    Brush="#C283fd"
+                                    Opacity=".7"
+                                    Radius="100"
+                                    Offset="0,0"
+                                    />
+                </Border.Shadow>
+            </Border>
+
+                <Label 
+                    
+                    x:Name="SocialLabel"
+                    Padding="0,0,0,20"
+                            Text="Social Environment"
+                                FontSize="30"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            TextColor="White"
+                               FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+               
+            
+                    <Grid>
+
+            <Border
+                            Grid.RowSpan="3"
+                            BackgroundColor="#311B45"
+                            Stroke="#6E557C"
+                            StrokeShape="RoundRectangle 30,30,30,30"
+                            StrokeThickness="2"
+                            HeightRequest="250"
+                            
+                            >
+                    <Grid>
+
+                        
+                <Image Source="fiziko.png"
+                               Aspect="AspectFill"
+                       Grid.RowSpan="10"
+                               
+                               />
+                        <RoundRectangle
+                            Grid.RowSpan="3"
+                            CornerRadius="30"
+                            HeightRequest="250"
+                           
+                            Opacity=".7"
+                            >
+                            <RoundRectangle.Fill >
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop 
+                                        Offset="0"
+                                        Color="Transparent"
+                                        ></GradientStop>
+                                    <GradientStop 
+                                        Offset="1"
+                                        Color="Black"
+                                        />
+
+
+
+                                </LinearGradientBrush>
+                            </RoundRectangle.Fill>
+
+                        </RoundRectangle>
+                    </Grid>
+                <Border.Shadow>
+                    <Shadow
+                                    Brush="#C283fd"
+                                    Opacity=".7"
+                                    Radius="100"
+                                    Offset="0,0"
+                                    />
+                </Border.Shadow>
+            </Border>
+
+
+
+                <Label     x:Name="ComunityLabel"
+                           Grid.Row="1"
+                            Padding="0,0,0,20"
+                            Text=" Community Environment" 
+                            FontSize="30"
+                            TextColor="White"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                    </Label.GestureRecognizers>
+                    
+                </Label>
+            </Grid>
+                
+            
+                   
+                <Grid >
+                    
+
+                <Border
+                            Grid.RowSpan="3"
+                            BackgroundColor="#311B45"
+                            Stroke="#6E557C"
+                            StrokeShape="RoundRectangle 30,30,30,30"
+                            StrokeThickness="2"
+                            HeightRequest="250"
+                            
+                            >
+                    <Grid>
+                    <Image  
+                            Source="helf.png"
+                               Aspect="AspectFill"
+                        Grid.RowSpan="10"
+                            />
+                        <RoundRectangle
+                            Grid.RowSpan="3"
+                            CornerRadius="30"
+                            HeightRequest="250"
+                            
+                            Opacity=".7"
+                            >
+                            <RoundRectangle.Fill >
+                                <LinearGradientBrush EndPoint="0,1">
+                                    <GradientStop 
+                                        Offset="0"
+                                        Color="Transparent"
+                                        ></GradientStop>
+                                    <GradientStop 
+                                        Offset="1"
+                                        Color="Black"
+                                        />
+
+
+
+                                </LinearGradientBrush>
+                            </RoundRectangle.Fill>
+                            
+                        </RoundRectangle>
+                    </Grid>
+                    <Border.Shadow>
+                        <Shadow
+                                    Brush="#C283fd"
+                                    Opacity=".7"
+                                    Radius="100"
+                                    Offset="0,0"
+                                    />
+                    </Border.Shadow>
+                </Border>
+
+                <Label 
+                            Padding="0,0,0,20"
+                                 FontSize="30"
+                            TextColor="white"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            FontAttributes="Bold"
+                            Text="Health policies">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                           
+                    </Grid>
+
+            
+           
+        </StackLayout>
+
+    </ScrollView>
+
+
+</ContentPage>

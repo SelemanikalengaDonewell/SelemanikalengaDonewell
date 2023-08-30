@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnvironmentApp3.Blogs"
+             BackgroundColor="{x:StaticResource Primary}"
+             Title="Blogs">
+
+
+    <Grid RowDefinitions="1*,8*,1*">
+
+        <Frame Grid.Row="0" 
+               Padding="0"
+               HorizontalOptions="Center"
+               CornerRadius="0"
+               HeightRequest="150"
+               WidthRequest="500" 
+               BackgroundColor="{x:StaticResource Primary}">
+            <Label
+             Padding="0"
+            Text="Environment Care"
+                TextColor="White"
+            FontAttributes="Bold"
+            FontSize="35"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            />
+
+        </Frame>
+        <Frame 
+            
+            Grid.Row="1" BackgroundColor="#fff" 
+            HasShadow="False"
+               BorderColor="#fff"
+               CornerRadius="30"
+              
+               >
+            <Grid RowDefinitions="Auto,Auto">
+
+                <Frame Grid.Row="1" 
+                       BackgroundColor="#efefef" 
+                       Margin="0,0,0,0"
+                       CornerRadius="30"
+               >
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="Log in" 
+                               HorizontalOptions="Center"
+                               TextColor="{x:StaticResource Primary}"
+                               FontSize="28" 
+                               FontAttributes="Bold"/>
+                        <Frame Padding="10"
+                       HeightRequest="45"
+                       BorderColor="{x:StaticResource Primary}"
+                       >
+                            <Grid ColumnDefinitions="25,*">
+                                <Entry Grid.Column="1" 
+                               HeightRequest="65"
+                               Placeholder="UserName or Email"/>
+                                <Image Source="name.png" 
+                                   Grid.Row="0"/>
+                            </Grid>
+                        </Frame>
+
+
+
+
+                        <Frame  HeightRequest="45" Padding="10"
+                        BorderColor="{x:StaticResource Primary}"
+                        >
+                            <Grid ColumnDefinitions="25,*">
+                                <Entry Grid.Column="1" 
+                                HeightRequest="65"
+                               Placeholder="Password"/>
+                                <Image Source="padlock.png" 
+                                       Grid.Column="0" 
+                                       />
+
+                            </Grid>
+                        </Frame>
+
+                        <Button Text="Log in" FontAttributes="Bold"
+                        FontSize="18"
+                        CornerRadius="9"
+                        HeightRequest="45"
+                        TextColor="White"
+                        BackgroundColor="{x:StaticResource Primary}"
+                        />
+                        <HorizontalStackLayout Spacing="60">
+                            <Label Text="Do you have an Account ?"
+                            FontAttributes="Bold"
+                           TextColor="{x:StaticResource Primary}"
+                           VerticalTextAlignment="Center"
+                           />
+                            <Label 
+                                x:Name="SignUpLabel"
+                                Text="Sign up" 
+                           FontAttributes="Bold"
+                           FontSize="22"
+                           TextDecorations="Underline"
+                            VerticalTextAlignment="Center"
+                           TextColor="{x:StaticResource Primary}"
+                           >
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                                </Label.GestureRecognizers> 
+                            </Label>
+                        </HorizontalStackLayout>
+
+                    </VerticalStackLayout>
+                </Frame>
+                <StackLayout>
+                   <Image Source="balogo.png" 
+                          HeightRequest="200"
+                          WidthRequest="200"/>
+
+
+                    
+                </StackLayout>
+            </Grid>
+        </Frame>
+
+    </Grid>
+
+
+</ContentPage>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnvironmentApp3.Sign_Up"
+             Title="Sign_Up">
+    <ScrollView>
+
+        <VerticalStackLayout>
+            <Image
+               x:Name="Image_Profile" 
+               Grid.Row="0"
+               BackgroundColor="Gray" 
+               WidthRequest="100" 
+               HeightRequest="100"
+               >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+                
+                
+            </Image>
+               
+                    <Entry x:Name="Full_Name" Placeholder="Full Name" />
+                
+                    <Entry x:Name="Gmail" Placeholder="Gmail" />
+
+                    <Entry   x:Name="Gender" Placeholder="Gender" />
+
+                    <Entry x:Name="Country" Placeholder="Country" />
+               
+                    <Entry x:Name="UserName" Placeholder="UserName" />
+                
+                    <Entry x:Name="PassWord" Placeholder="PassWord" />
+              
+                    <Entry x:Name="Confirm_Password" Placeholder="Confirm Password"/>
+
+            <Button Grid.Row="8" x:Name="SignUp" Clicked="Sign_Up_Clicked" Text="Sign Up"/>
+
+            <Button Grid.Row="9" x:Name="Continue" Clicked="Continue_Clicked" Text="Continue"/>
+        <Label Text="Sign In"/>
+   
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

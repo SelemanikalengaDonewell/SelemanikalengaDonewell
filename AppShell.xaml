@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="EnvironmentApp3.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:EnvironmentApp3"
+    Shell.FlyoutBehavior="Flyout">
+
+    <Shell.FlyoutHeader>
+
+        <Border 
+         BackgroundColor="#311B45"
+        Stroke="#6E557C"
+        StrokeShape="RoundRectangle 0,0,0,1"
+        StrokeThickness="2"
+        HeightRequest="200"
+            >
+            <Grid>
+                <Image Source="fiz.png" Aspect="AspectFill"/>
+                <RoundRectangle
+                            Grid.RowSpan="3"
+                            HeightRequest="200"
+                            Opacity=".7"
+                            >
+                    <RoundRectangle.Fill >
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop 
+                                        Offset="0"
+                                        Color="Transparent"
+                                        ></GradientStop>
+                            <GradientStop 
+                            Offset="1"
+                            Color="Black"/>
+                                        
+                        </LinearGradientBrush>
+                    </RoundRectangle.Fill>
+                </RoundRectangle>
+                <Label Padding="0"
+                            Text="Environment Care"
+                            FontSize="35"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            TextColor="White"
+                            FontAttributes="Bold"/>
+            </Grid>
+        </Border>
+    </Shell.FlyoutHeader>
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid  RowDefinitions="7,Auto,1,2" ColumnDefinitions="35,*">
+                
+                
+                <Label
+                    Text="{Binding Title}"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                   TextColor="DarkBlue"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    />
+                <BoxView
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Color="LightGray"
+                    Grid.ColumnSpan="10"
+                    />
+
+            </Grid>
+            
+        </DataTemplate>
+    </Shell.ItemTemplate>
+    
+    <ShellContent
+        
+        Title="Home" 
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="Home" />
+
+    <ShellContent
+        Title="Physical Environment"
+        ContentTemplate="{DataTemplate local:PhysicalPagexaml}"
+        Route="PhysicalPagexaml" />
+
+    <ShellContent
+        Title="Social Environment"
+        ContentTemplate="{DataTemplate local:SocialPage}"
+        Route="SocialPage" />
+
+    <ShellContent
+        Title="Community Environment"
+        ContentTemplate="{DataTemplate local:ComunityPage}"
+        Route="ComunityPage" />
+
+    <ShellContent
+        Title="Health Policies"
+        ContentTemplate="{DataTemplate local:HealthPages}"
+        Route="HealthPages" />
+
+    <ShellContent
+        Title="Blog"
+        ContentTemplate="{DataTemplate local:PosterPage}"
+        Route="PosterPage" />
+    
+
+    <ShellContent
+        Title="Contact Us"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="Environment Care" />
+
+    <ShellContent
+        Title="About Us"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="Environment Care" />
+
+    <ShellContent
+        Title="Help"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="Environment Care" />
+
+
+    
+
+
+</Shell>

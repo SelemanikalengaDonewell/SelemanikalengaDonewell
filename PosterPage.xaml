@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EnvironmentApp3.PosterPage"
+             Title="Post">
+    <VerticalStackLayout>
+        <Grid ColumnSpacing="-50">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border
+                Margin="-50,0,0,0"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.RowSpan="3"
+                BackgroundColor="#311B45"
+                Stroke="#6E557C"
+                StrokeShape="RoundRectangle 55,55,55,55"
+                StrokeThickness="2"
+                HeightRequest="70"
+                WidthRequest="70"
+                            >
+                <Grid>
+                    
+                    <RoundRectangle
+                            Grid.RowSpan="3"
+                            CornerRadius="30"
+                            HeightRequest="100"
+                            WidthRequest="100"
+                            Opacity=".7"
+                            >
+                        <RoundRectangle.Fill >
+                            <LinearGradientBrush EndPoint="0,1">
+                                <GradientStop 
+                                        Offset="0"
+                                        Color="Transparent"
+                                        ></GradientStop>
+                                <GradientStop 
+                                        Offset="1"
+                                        Color="Black"
+                                        />
+                            </LinearGradientBrush>
+                        </RoundRectangle.Fill>
+                    </RoundRectangle>
+                </Grid>
+            </Border>
+            <Frame Grid.Row="0" Grid.Column="1">
+                <Grid>
+                    <Grid x:Name="CarryText">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="29"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0">
+                                <Label 
+                                    x:Name="PostLabel"
+                                Text="Your Post will appear here"
+                                />
+                            </Grid>
+                        
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="50"/>
+                            </Grid.ColumnDefinitions>
+                            <Label  
+                                x:Name="CommentLabel"
+                                Grid.Column="0" Text="Comnment"
+                                    VerticalOptions="End"
+                                    />
+                            <Image 
+                                x:Name="LikeBtn"
+                                Source="like.png" Grid.Column="1"
+                                   HeightRequest="30"
+                                   WidthRequest="30"
+                                   VerticalOptions="End"
+                                   HorizontalOptions="End"
+                                   />
+                            <Image
+                                x:Name="DislikeBtn"
+                                Source="dislkike.png"  Grid.Row="1"  Grid.Column="2"
+                                   HeightRequest="30"
+                                   WidthRequest="30"
+                                    VerticalOptions="End"
+                                   HorizontalOptions="End"
+                                   />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Frame>
+
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
